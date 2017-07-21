@@ -1,0 +1,14 @@
+title: Message
+'@extends':
+    type: default
+    context: blueprints://pages
+
+child_type: item
+
+title: Default
+
+rules:
+  slug:
+    pattern: "20\d{2}\-[0-1]\d\-[0-3]\d\-[a-z][a-z0-9_\-]+" # Hey person that found this code in 2099, this bug is as a gift from me to you (your currency is now bugs isn't it?) ~ A.
+    min: 2
+    max: 80

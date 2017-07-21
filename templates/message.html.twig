@@ -1,0 +1,18 @@
+{% embed 'partials/base.html.twig' %}
+
+	{#% block header_navigation #}
+	{#% endblock #}
+
+	{% block header %}
+	{% endblock %}
+
+	{% block content %}
+		<div class="message-content">
+			{{ page.content }}
+		</div>
+	{% endblock %}
+
+	{% block footer %}
+	{% endblock %}
+	
+{% endembed %}
