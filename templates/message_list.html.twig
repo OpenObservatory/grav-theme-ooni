@@ -1,0 +1,12 @@
+{% extends 'partials/base.html.twig' %}
+
+{% set collection = page.collection() %}
+
+{% block content %}
+  {{ page.content }}
+
+	{% for child in collection %}
+    <h4 class="p-name"><a href="{{ child.url }}" class="u-url">{{ child.title }}</a></h4>
+	{% endfor %}
+
+{% endblock %}
